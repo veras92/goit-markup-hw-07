@@ -1,0 +1,32 @@
+.list__advantages {
+  display: flex;
+  flex-direction: row;
+}
+
+.list__advantages-li {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.list__advantages-li__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+.list__advantages-li__desc {
+  color: var(--smallTextColor);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.list__advantages-icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+  margin-bottom: 30px;
+}
