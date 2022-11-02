@@ -17,3 +17,8 @@
   flex-direction: row;
   align-items: center;
 }
+nav a:hover,
+nav a:active,
+nav a:focus {
+  color: var(--blueColor);
+}

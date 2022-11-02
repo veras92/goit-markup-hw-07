@@ -5,6 +5,10 @@
   margin-top: 50px;
   align-items: center;
 }
+.list__clients-li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .list__clients-li__link {
   display: flex;
   border: 1px solid #afb1b8;
@@ -14,19 +18,17 @@
   justify-content: center;
   align-items: center;
   transition: border var(--transition-dur-and-func);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--blueColor);
+  }
 }
-.list__clients-li:not(:last-child) {
-  margin-right: 30px;
-}
+
 .list__clients-li__link__icon {
   fill: #afb1b8;
   transition: fill var(--transition-dur-and-func);
-}
-.list__clients-li__link:hover,
-.list__clients-li__link:focus {
-  border: 1px solid var(--blueColor);
-}
-.list__clients-li__link:hover .list__clients-li__link__icon,
-.list__clients-li__link:focus .list__clients-li__link__icon {
-  fill: var(--blueColor);
+  .list__clients-li__link:hover &,
+  .list__clients-li__link:focus & {
+    fill: var(--blueColor);
+  }
 }

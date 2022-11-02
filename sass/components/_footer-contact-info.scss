@@ -1,11 +1,15 @@
-.list__footer-contact__info__link {
-  color: var(--smallTextColor);
-  transition: color var(--transition-dur-and-func);
-}
 .footer__adress {
   color: white;
   margin-bottom: 9px;
   font-style: normal;
+}
+.list__footer-contact__info__link {
+  color: var(--smallTextColor);
+  transition: color var(--transition-dur-and-func);
+  &:hover,
+  &:focus {
+    color: var(--blueColor);
+  }
 }
 
 .list__footer-contact__info:not(:last-child) {
@@ -13,8 +17,4 @@
 }
 .list__footer-contact a {
   color: rgba(255, 255, 255, 0.6);
-}
-.list__footer-contact__info__link:hover,
-.list__footer-contact__info__link:focus {
-  color: var(--blueColor);
 }

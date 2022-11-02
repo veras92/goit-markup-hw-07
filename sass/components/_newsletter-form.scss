@@ -21,10 +21,24 @@
   padding-left: 15px;
   width: 358px;
   height: 50px;
-
   background: transparent;
   color: white;
   transition: border-color var(--transition-dur-and-func);
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--blueColor);
+    cursor: pointer;
+  }
 }
 .newsletter-form__label__input-wrapper {
   margin-right: 12px;
@@ -33,17 +47,4 @@
 .newsletter-form__align {
   display: flex;
   flex-direction: row;
-}
-.newsletter-form__label__input-wrapper__input:focus {
-  outline: none;
-  border-color: var(--blueColor);
-  cursor: pointer;
-}
-.newsletter-form__label__input-wrapper__input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.3;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
 }
